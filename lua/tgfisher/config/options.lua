@@ -60,5 +60,5 @@ vim.g.vimtex_complete_enabled = 1
 vim.opt.conceallevel = 2
 
 -- NOTE: You should make sure your terminal supports this
-vim.o.termguicolors = false # notermguicolors
+vim.o.termguicolors = false -- notermguicolors
 vim.cmd.colorscheme("tokyonight-storm")
