@@ -17,21 +17,21 @@ return {
       function()
         require("noice").cmd("dismiss")
       end,
-      { desc = "[D]ismiss message" },
+      desc = "[D]ismiss message",
     },
     {
       "<leader>ol",
       function()
         require("noice").cmd("last")
       end,
-      { desc = "[L]ast message" },
+      desc = "[L]ast message",
     },
     {
       "<leader>oh",
       function()
         require("noice").cmd("history")
       end,
-      { desc = "message [H]istory" },
+      desc = "Message [H]istory",
     },
   },
   opts = {

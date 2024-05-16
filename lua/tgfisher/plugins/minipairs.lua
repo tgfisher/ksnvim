@@ -5,7 +5,7 @@ return {
     opts = {},
     keys = {
       {
-        "<leader>up",
+        "<leader>tp",
         function()
           local Util = require("lazy.core.util")
           vim.g.minipairs_disable = not vim.g.minipairs_disable
@@ -15,7 +15,7 @@ return {
             Util.info("Enabled auto pairs", { title = "Option" })
           end
         end,
-        desc = "Toggle auto pairs",
+        desc = "[T]oggle auto-mini[P]airs",
       },
     },
   }
