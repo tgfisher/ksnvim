@@ -2,6 +2,15 @@
 
 My nvim config started from kickstart.
 
+## Requirements
+
+**NVIM v0.10.0** (since `lukas-reineke/indent-blankline.nvim` updated in [
+171d4d5](https://github.com/lukas-reineke/indent-blankline.nvim/commit/171d4d5a1560ccb556e94aa6df7e969068384049))
+
+If you have **<NVIM v0.10.0** you can run `:Lazy restore` in neovim after copying `./lock_files/pre-nvim0pt10pt0-lock.json` --> `./lazy-lock.json`.
+
+-----
+
 https://github.com/kdheepak/kickstart.nvim/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
 
 ### Introduction
