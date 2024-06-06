@@ -1,4 +1,5 @@
 return {
+  { "rose-pine/neovim", name = "rose-pine" },
   {
     -- Theme inspired by Atom
     "navarasu/onedark.nvim",
