@@ -61,4 +61,6 @@ vim.opt.conceallevel = 2
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = false -- notermguicolors
+vim.o.background = dark
+vim.cmd.colorscheme("tokyonight-moon")
 vim.cmd.colorscheme("tokyonight-storm")
