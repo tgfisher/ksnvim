@@ -287,6 +287,7 @@ require("lazy").setup({
         ["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
         ["<leader>n"] = { name = "[N]ice writingspace", _ = "which_key_ignore" },
         ["<leader>o"] = { name = "N[O]ice messages", _ = "which_key_ignore" },
+        ["<leader>k"] = { name = "zettel[K]asten", _ = "which_key_ignore", mode = {"n", "v"}},
       })
     end,
   },
