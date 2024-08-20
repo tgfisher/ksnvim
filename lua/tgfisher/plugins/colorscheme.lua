@@ -2,7 +2,7 @@ return {
   { "rose-pine/neovim", 
     name = "rose-pine",
     lazy = false,
-},
+  },
   {
     -- Theme inspired by Atom
     "navarasu/onedark.nvim",
