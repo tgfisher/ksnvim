@@ -8,18 +8,24 @@ return {
       -- which key register like this:
       -- ["<leader>k"] = { name = "zettel[K]asten", _ = "which_key_ignore", mode = {"n", "v"}}
 
-      vim.keymap.set("n", "<leader>kl", function()
-        vim.cmd("ZkInsertLink")
-      end, { desc = "Zettel[K]asten [L]inkto Search Title"})
+      --vim.keymap.set("n", "<leader>kl", function()
+      --  vim.cmd("ZkInsertLink")
+      --end, { desc = "Zettel[K]asten [L]inkto Search Title"})
 
       vim.keymap.set("n", "<leader>kt", function()
         vim.cmd("ZkTags")
       end, { desc = "Zettel[K]asten [T]ags Picker"})
 
       -- content search notes based on selected text
-      vim.keymap.set("v", "<leader>kl", function()
-        vim.cmd("ZkInsertLinkAtSelection {matchSelected = true}")
-      end, { desc = "Zettel[K]asten [L]inkto Match Selected"})
+      vim.keymap.set("v", "<leader>kl",
+        ":'<,'>ZkInsertLinkAtSelection {matchSelected = true}<CR>"
+      , { desc = "Zettel[K]asten [L]inkto Match Selected"})
+      -- below this is how I tried to do it first, but it doens't work unless
+      -- the command was called manually first, I did try to  require(xk.comands)`
+      -- and that didn't seem to work right either.`
+      -- vim.keymap.set("v", "<leader>kl", function()
+      --   vim.cmd("'<,'>ZkInsertLinkAtSelection {matchSelected = true}")
+      -- end, { desc = "Zettel[K]asten [L]inkto Match Selected"})
 
     end
   }
