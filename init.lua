@@ -278,16 +278,16 @@ require("lazy").setup({
       require("which-key").setup()
 
       -- Document existing key chains
-      require("which-key").register({
-        ["<leader>c"] = { name = "[C]ode", _ = "which_key_ignore" },
-        ["<leader>d"] = { name = "[D]ocument", _ = "which_key_ignore" },
-        ["<leader>r"] = { name = "[R]ename", _ = "which_key_ignore" },
-        ["<leader>s"] = { name = "[S]earch", _ = "which_key_ignore" },
-        ["<leader>t"] = { name = "[T]oggle", _ = "which_key_ignore" },
-        ["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
-        ["<leader>n"] = { name = "[N]ice writingspace", _ = "which_key_ignore" },
-        ["<leader>o"] = { name = "N[O]ice messages", _ = "which_key_ignore" },
-        ["<leader>k"] = { name = "zettel[K]asten", _ = "which_key_ignore", mode = {"n", "v"}},
+      require("which-key").add({
+        { "<leader>c", group = "[C]ode" },
+        { "<leader>d", group = "[D]ocument" },
+        { "<leader>r", group = "[R]ename" },
+        { "<leader>s", group = "[S]earch" },
+        { "<leader>t", group = "[T]oggle" },
+        { "<leader>w", group = "[W]orkspace" },
+        { "<leader>n", group = "[N]ice writingspace" },
+        { "<leader>o", group = "N[O]oice messages" },
+        { "<leader>zk", group = "zettel[K]asten", mode = {"n", "v"} },
       })
     end,
   },
