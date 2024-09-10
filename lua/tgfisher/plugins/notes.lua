@@ -28,5 +28,8 @@ return {
       -- end, { desc = "Zettel[K]asten [L]inkto Match Selected"})
 
     end
-  }
+  },
+  -- {
+  --   dir="~/lua_projects/local_plugins_sandbox.nvim/"
+  -- }
 }
