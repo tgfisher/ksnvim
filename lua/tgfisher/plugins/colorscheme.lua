@@ -1,7 +1,19 @@
 return {
-  { "rose-pine/neovim", 
+  { "rose-pine/neovim",
     name = "rose-pine",
-    lazy = false,
+    config = function()
+      require("rose-pine").setup({
+        styles= {
+          bold = true,
+          italic = false,
+          transparency = true,
+        },
+        highlight_groups = {
+          Comment = { italic = true },
+          String = { italic = true },
+        },
+      })
+    end,
   },
   {
     -- Theme inspired by Atom
